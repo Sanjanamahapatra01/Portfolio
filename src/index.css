@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap");
+
+:root {
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #eef0f6;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f3f4f8;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a5a;
+  --text-muted: #71717a;
+  --accent: #4f46e5;
+  --accent-light: #6366f1;
+  --accent-dark: #4338ca;
+  --accent-glow: rgba(99, 102, 241, 0.1);
+  --gradient-1: linear-gradient(135deg, #4f46e5, #7c3aed);
+  --gradient-2: linear-gradient(135deg, #4f46e5, #0891b2);
+  --border: #e2e4ea;
+  --border-light: #d1d5db;
+  --success: #16a34a;
+  --warning: #d97706;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-bg-scrolled: rgba(248, 249, 252, 0.85);
+  --mobile-menu-bg: rgba(248, 249, 252, 0.98);
+  --particle-color: #818cf8;
+  --grid-line-color: rgba(99, 102, 241, 0.06);
+  --terminal-red: #ef4444;
+  --terminal-yellow: #f59e0b;
+  --terminal-green: #22c55e;
+  --code-purple: #7c3aed;
+  --code-blue: #2563eb;
+  --code-green: #16a34a;
+  --code-yellow: #b45309;
+  --code-pink: #db2777;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #1f1f35;
+  --text-primary: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --accent: #6366f1;
+  --accent-light: #818cf8;
+  --accent-dark: #4f46e5;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --gradient-1: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --gradient-2: linear-gradient(135deg, #6366f1, #06b6d4);
+  --border: #27272a;
+  --border-light: #3f3f46;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --nav-bg-scrolled: rgba(10, 10, 15, 0.85);
+  --mobile-menu-bg: rgba(10, 10, 15, 0.98);
+  --particle-color: #6366f1;
+  --grid-line-color: rgba(99, 102, 241, 0.03);
+  --terminal-red: #ef4444;
+  --terminal-yellow: #f59e0b;
+  --terminal-green: #22c55e;
+  --code-purple: #c084fc;
+  --code-blue: #60a5fa;
+  --code-green: #4ade80;
+  --code-yellow: #fbbf24;
+  --code-pink: #f472b6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+a {
+  color: var(--accent-light);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--accent);
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-label {
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.glow-line {
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-1);
+  border-radius: 2px;
+  margin: 16px auto 0;
+}
+
+.grid-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-color) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section-header {
+    margin-bottom: 40px;
+  }
+}

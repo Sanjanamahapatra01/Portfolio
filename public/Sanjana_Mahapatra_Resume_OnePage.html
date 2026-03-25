@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjana Mahapatra — Resume</title>
+    <style>
+      @page {
+        margin: 0.15in 0.4in 0.25in 0.4in;
+        size: letter;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 10px;
+        line-height: 1.4;
+        color: #1a1a1a;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.15in 0.4in 0.25in 0.4in;
+        background: #fff;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .header h1 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #0d1b2a;
+        margin-bottom: 1px;
+      }
+      .header .subtitle {
+        font-size: 10.5px;
+        font-weight: 600;
+        color: #415a77;
+        letter-spacing: 1px;
+        margin-bottom: 4px;
+      }
+      .header .contact {
+        font-size: 9.5px;
+        color: #555;
+      }
+      .header .contact a {
+        color: #1b4965;
+        text-decoration: none;
+      }
+      .sep {
+        margin: 0 4px;
+        color: #aaa;
+      }
+      .section {
+        margin-bottom: 7px;
+      }
+      .section-title {
+        font-size: 10.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #0d1b2a;
+        border-bottom: 1.5px solid #0d1b2a;
+        padding-bottom: 2px;
+        margin-bottom: 5px;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        row-gap: 1px;
+      }
+      .skills-grid .label {
+        font-weight: 600;
+        color: #333;
+      }
+      .skills-grid .value {
+        color: #444;
+      }
+      .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .exp-header .role {
+        font-weight: 700;
+        font-size: 10.5px;
+      }
+      .exp-header .dates {
+        font-size: 9.5px;
+        color: #555;
+        white-space: nowrap;
+      }
+      .exp-company {
+        font-size: 9.5px;
+        color: #555;
+        font-style: italic;
+        margin-bottom: 3px;
+      }
+      ul {
+        padding-left: 15px;
+        margin-bottom: 4px;
+      }
+      li {
+        margin-bottom: 1.5px;
+        color: #333;
+      }
+      .exp-block {
+        margin-bottom: 9px;
+      }
+      hr.d {
+        border: none;
+        border-top: 1px solid #e0e0e0;
+        margin: 6px 0;
+      }
+      .project-title {
+        font-weight: 700;
+      }
+      .project-desc {
+        color: #444;
+        margin-bottom: 3px;
+      }
+      .edu-main {
+        font-weight: 600;
+      }
+      .edu-detail {
+        color: #555;
+        font-size: 9.5px;
+      }
+      .edu-sub {
+        color: #000000;
+        font-size: 9.5px;
+        margin-top: 1px;
+        font-weight: bolder;
+      }
+      .summary-text {
+        color: #333;
+        text-align: justify;
+      }
+      .pub-title {
+        font-weight: 600;
+      }
+      .pub-desc {
+        color: #555;
+        font-size: 9.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>SANJANA MAHAPATRA</h1>
+      <div class="subtitle">Software Engineer</div>
+      <div class="contact">
+        +91 7751067799 <span class="sep">|</span> Bengaluru, India
+        <span class="sep">|</span>
+        <a href="mailto:sanjana101mahapatra@gmail.com"
+          >sanjana101mahapatra@gmail.com</a
+        >
+        <span class="sep">|</span>
+        <a href="https://www.linkedin.com/in/sanjana-mahapatra-620b55188/"
+          >LinkedIn</a
+        >
+        <span class="sep">|</span>
+        <a href="https://github.com/Sanjanamahapatra01">GitHub</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Software Engineer with 2 years of experience building and shipping
+        frontend-heavy web applications in React.js, Next.js, and Spring Boot.
+        At Nextiva, built a Knowledge Base platform and an Integrations
+        Marketplace (50+ third-party apps) end-to-end. Comfortable with OAuth
+        2.0, REST APIs, CI/CD, and writing tested, review-ready code in an Agile
+        team.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+        <span class="label">Languages</span
+        ><span class="value">Java, JavaScript, TypeScript, HTML, CSS</span>
+        <span class="label">Frontend</span
+        ><span class="value"
+          >React.js, Next.js, Remix.js, Redux, React Query, Zustand</span
+        >
+        <span class="label">Backend</span
+        ><span class="value"
+          >Spring Boot, Spring Security, REST APIs, Node.js</span
+        >
+        <span class="label">Auth &amp; Security</span
+        ><span class="value"
+          >OAuth 2.0, Keycloak SSO, Role-Based Access Control</span
+        >
+        <span class="label">Testing</span
+        ><span class="value"
+          >Jest, React Testing Library, JUnit, SonarQube</span
+        >
+        <span class="label">Databases</span
+        ><span class="value">PostgreSQL, MongoDB</span>
+        <span class="label">DevOps &amp; Tools</span
+        ><span class="value"
+          >Docker, Jenkins, Git, CI/CD Pipelines, Workato, Jira</span
+        >
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      <div class="exp-block">
+        <div class="exp-header">
+          <span class="role"
+            >Nextiva International Pvt. Ltd. — Bengaluru, India</span
+          >
+          <span class="dates">Mar 2025 – Present</span>
+        </div>
+        <div class="exp-company">Software Engineer</div>
+        <ul>
+          <li>
+            Developed a Knowledge Base platform supporting 5+ document formats
+            (PDF, DOCX, CSV) with drag-and-drop batch upload and web crawling,
+            reducing content onboarding time from days to hours for support
+            teams
+          </li>
+          <li>
+            Built an AI-powered Query Analyzer with conversational UI,
+            multi-turn history, and cited source answers — used internally to
+            validate KB retrieval accuracy before production rollout
+          </li>
+          <li>
+            Implemented the Integrations Marketplace connecting 50+ SaaS apps
+            (Salesforce, Teams, Google) with multi-step install wizard, OAuth
+            2.0 pop-up auth, and Workato iframe embedding
+          </li>
+          <li>
+            Configured connected app management with entitlement-based gating
+            and role-aware permissions, including full-text search and sidebar
+            filters across 100+ enterprise accounts
+          </li>
+          <li>
+            Created 15+ reusable UI components (card/table views, paginated
+            lists, debounced search, date-range filters) adopted across 4
+            product modules; participated in code reviews and sprint planning
+          </li>
+        </ul>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-header">
+          <span class="role">Cartagan Software Pvt. Ltd.</span>
+          <span class="dates">Oct 2024 – Dec 2024</span>
+        </div>
+        <div class="exp-company">Software Developer (Freelance)</div>
+        <ul>
+          <li>
+            Independently delivered a full-stack ERP application using Remix.js
+            for a retail business, digitizing procurement, inventory, sales, and
+            delivery workflows across 200+ SKUs
+          </li>
+        </ul>
+      </div>
+
+      <div class="exp-block">
+        <div class="exp-header">
+          <span class="role"
+            >Prodevans Technologies Pvt. Ltd. — Bengaluru, India</span
+          >
+          <span class="dates">Aug 2023 – Aug 2024</span>
+        </div>
+
+        <div class="exp-company" style="margin-top: 3px">
+          Associate Software Developer
+          <span style="color: #999; font-style: normal">|</span> Feb 2024 – Aug
+          2024
+        </div>
+        <ul>
+          <li>
+            Delivered an overdue payment recovery app with Next.js and
+            multi-channel alerts (email, SMS, WhatsApp), recovering 30% of
+            outstanding balances within 3 months of launch
+          </li>
+          <li>
+            Designed a React.js dashboard with role-based auth (Spring Security)
+            for an insurance company, reducing manual workflow steps by 25%
+          </li>
+        </ul>
+
+        <div class="exp-company" style="margin-top: 3px">
+          Developer Intern
+          <span style="color: #999; font-style: normal">|</span> Aug 2023 – Feb
+          2024
+        </div>
+        <ul>
+          <li>
+            Integrated MessageBird chatbot handling 1,000+ monthly interactions,
+            increasing lead generation by 50% and conversion rates by 30%
+          </li>
+          <li>
+            Shipped a Task Management System using Next.js and Spring Boot,
+            collaborating across 3 teams and shortening delivery timelines by
+            40%
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projects</div>
+      <div class="project-desc">
+        <span class="project-title">CI/CD Pipeline Setup:</span> Automated
+        build-test-deploy pipeline with Jenkins, GitHub webhooks, SonarQube
+        static analysis, and Docker containerization.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="exp-header">
+        <span class="edu-main">B.Tech — Computer Science and Engineering</span>
+        <span class="dates">Aug 2019 – Apr 2023</span>
+      </div>
+      <div class="edu-detail">
+        National Institute of Science and Technology | CGPA: 8.94
+      </div>
+      <div class="edu-sub">
+        Intermediate — CHSE, Odisha &nbsp;|&nbsp; Matriculation — BSE, Odisha
+      </div>
+    </div>
+
+    <div class="section" style="margin-bottom: 0">
+      <div class="section-title">Publication</div>
+      <div class="project-desc">
+        <span class="pub-title"
+          >IoT-Based Teaching Assistant System for Smart Classrooms</span
+        >
+        — Apple Academic Press (Book Chapter)
+      </div>
+    </div>
+  </body>
+</html>
