@@ -2,14 +2,27 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  "JavaScript", "TypeScript", "Java", "HTML/CSS",
-  "React.js", "Next.js", "Remix.js", "Redux / Zustand",
-  "Spring Boot", "Node.js", "REST APIs", "Spring Security",
+  "JavaScript",
+  "TypeScript",
+  "Java",
+  "HTML/CSS",
+  "React.js",
+  "Next.js",
+  "Remix.js",
+  "Redux / Zustand",
+  "Spring Boot",
+  "Node.js",
+  "REST APIs",
+  "Spring Security",
 ];
 
 const tools = [
-  "Docker", "Jenkins / CI/CD", "Git", 
-  "Workato", "Jira", "VS Code",
+  "Docker",
+  "Jenkins / CI/CD",
+  "Git",
+  "Workato",
+  "Jira",
+  "VS Code",
 ];
 
 const marqueeItems = [

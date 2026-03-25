@@ -90,7 +90,7 @@ const projects = [
     description:
       "Personal portfolio built with React.js and Vite, featuring light/dark mode toggle, animated marquee, Framer Motion transitions, and deployed on Vercel.",
     tech: ["React.js", "Vite", "Framer Motion", "Vercel"],
-    github: "https://github.com/Sanjanamahapatra01",
+    github: "https://github.com/Sanjanamahapatra01/Portfolio",
     category: "fullstack",
     highlights: [
       "Light & dark theme with localStorage",
@@ -180,6 +180,7 @@ export default function Projects() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: i * 0.08 }}
               layout
+              className="project-card"
               style={{
                 background: "var(--bg-card)",
                 border: "1px solid var(--border)",
@@ -187,19 +188,7 @@ export default function Projects() {
                 padding: "28px",
                 display: "flex",
                 flexDirection: "column",
-                transition: "var(--transition)",
                 cursor: "default",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "var(--accent)";
-                e.currentTarget.style.transform = "translateY(-4px)";
-                e.currentTarget.style.boxShadow =
-                  "0 8px 30px rgba(99,102,241,0.1)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "var(--border)";
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "none";
               }}
             >
               <div
